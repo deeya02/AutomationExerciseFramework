@@ -37,7 +37,7 @@ public class SignupLoginPage {
 		 WaitUtils.visible(loginEmail).sendKeys(email); 
 		 WaitUtils.visible(loginPassword).clear();
 	WaitUtils.visible(loginPassword).sendKeys(password); 
-	//WaitUtils.clickable(loginButton).click();
+	WaitUtils.clickable(loginButton).click();
 	}
 	 public void clickLogin() {
 		 WaitUtils.clickable(loginButton).click();

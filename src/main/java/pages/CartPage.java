@@ -36,7 +36,7 @@ public class CartPage {
             By.xpath("//td[@class='cart_description']");
 
     By proceedToCheckoutButton =
-            By.xpath("//a[contains(@class,'Check_out')]");
+            By.xpath("//a[contains(text(),'Proceed To Checkout')]");
 
     public void clickProducts() {
 

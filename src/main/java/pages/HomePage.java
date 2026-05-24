@@ -16,7 +16,7 @@ WebDriver driver = DriverFactory.getDriver();
  By contactUsLink = By.xpath("//a[contains(text(),'Contact us')]");
  By logoutLink = By.xpath("//a[contains(text(),'Logout')]");
  By deleteAccountLink = By.xpath("//a[contains(text(),'Delete Account')]");
- By loggedInText = By.xpath("//a[contains(text(),'Logged in as')]");
+ By loggedInText = By.xpath("//li/a[contains(text(),'Logged in as')]");
  
  public void openHomePage() {
 	 driver.get(ConfigReader.BASE_URL);
@@ -26,7 +26,8 @@ public void verifyHomePage()
 	 Assert.assertTrue(driver.getTitle().contains("Automation Exercise")); }
  
  public void clickSignupLogin() 
-{ WaitUtils.clickable(signupLoginLink).click(); }
+{ 
+	 WaitUtils.clickable(signupLoginLink).click(); }
  
  public void clickProducts() 
 { WaitUtils.clickable(productsLink).click(); }
